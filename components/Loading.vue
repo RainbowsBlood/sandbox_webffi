@@ -68,7 +68,6 @@ export default {
   }
 }
 </script>
-<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
 <style lang="css" scoped>
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 .hero {

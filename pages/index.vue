@@ -12,19 +12,19 @@
       <div v-show="!menuToggled" class="HomePage__mouseIcon">
         <ScrollIcon />
       </div>
-      <Footer />
     </div>
-    <div v-show="!menuToggled" class="HomePage__content position-relative">
+    <div v-show="!menuToggled" class="HomePage__content">
       <h1 class="text-center">Something</h1>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Menu from '~/components/menu.vue'
-import HomeButton from '~/components/homebutton.vue'
-import Loading from '~/components/loading.vue'
-import Footer from '~/components/footer.vue'
+import Menu from '~/components/Menu.vue'
+import HomeButton from '~/components/HomeButton.vue'
+import Loading from '~/components/Loading.vue'
+import Footer from '~/components/Footer.vue'
 import ScrollIcon from '~/components/ScrollIcon.vue'
 
 export default {
@@ -40,11 +40,11 @@ export default {
   })
 }
 </script>
-<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 .title-container {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: black;
