@@ -40,8 +40,9 @@ export default {
   })
 }
 </script>
-
+<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
 <style>
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 .title-container {
   position: fixed;
   width: 100%;
