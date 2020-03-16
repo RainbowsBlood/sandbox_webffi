@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Menu from '~/components/Menu.vue'
+import Menu from '~/components/menu.vue'
 import HomeButton from '~/components/HomeButton.vue'
 import Loading from '~/components/Loading.vue'
 import Footer from '~/components/Footer.vue'
