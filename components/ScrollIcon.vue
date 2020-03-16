@@ -12,21 +12,22 @@ export default {
 
 <style lang="css" scoped>
 .mousey {
-  margin-left: -17px;
+  margin-left: -18px;
   position: absolute;
   left: 50%;
   bottom: 12rem;
   width: 3px;
-  padding: 10px 15px;
+  padding: 10px 16px;
   height: 35px;
   border: 2px solid #fff;
   border-radius: 25px;
-  opacity: 0.75;
+  opacity: 0.288;
   box-sizing: content-box;
-  transition: transform 0.4s;
+  transition: transform 0.4s ease-in-out;
 }
 .mousey:hover {
   transform: translateY(1rem);
+  opacity: 0.75;
 }
 
 .scroller {
