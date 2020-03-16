@@ -1,53 +1,61 @@
 <template>
-  <section>
-    <div>
-      <Logo :width="350"/>
-      <h1 class="title">NUXT<span class="green">JS</span></h1>
-      <h2 class="subtitle">Starter for CodeSandBox</h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation <IconLink/></a>
-        <NLink to="/about" class="button--grey">About</NLink>
+  <div class="HomePage position-absolute w-100 h-100">
+    <Loading />
+    <div class="HomePage__wrapper position-relative w-100 h-100">
+      <Menu v-on:menuToggled="menuToggled = !menuToggled" />
+      <HomeButton />
+      <div class="title-container">
+        <div class="title-wrapper">
+          <h1>FFFI MU</h1>
+        </div>
       </div>
+      <div v-show="!menuToggled" class="HomePage__mouseIcon">
+        <ScrollIcon />
+      </div>
+      <Footer />
     </div>
-  </section>
+    <div v-show="!menuToggled" class="HomePage__content position-relative">
+      <h1 class="text-center">Something</h1>
+    </div>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import IconLink from '~/components/IconLink.vue'
+import Menu from '~/components/menu.vue'
+import HomeButton from '~/components/homebutton.vue'
+import Loading from '~/components/loading.vue'
+import Footer from '~/components/footer.vue'
+import ScrollIcon from '~/components/ScrollIcon.vue'
 
 export default {
   components: {
-    Logo,
-    IconLink
-  }
+    Menu,
+    HomeButton,
+    Loading,
+    Footer,
+    ScrollIcon
+  },
+  data: () => ({
+    menuToggled: false
+  })
 }
 </script>
 
-<style scoped>
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 400;
-  font-size: 100px;
-  color: #2E495E;
-  letter-spacing: 1px;
-  font-size: 6em;
+<style>
+.title-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
-.green {
-  color: #00C48D;
+.title-wrapper {
+  position: relative;
+  top: 35%;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 3em;
-  color: #2E495E;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.title-wrapper > h1 {
+  color: white;
+  text-align: center;
+  font-size: 7rem;
+  font-family: 'VT323', monospace;
 }
 </style>

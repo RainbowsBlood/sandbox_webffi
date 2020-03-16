@@ -1,62 +1,76 @@
 export default {
-  /*
-  ** Rendering mode
-  ** Doc: https://nuxtjs.org/api/configuration-mode
-  */
   mode: 'universal',
-
   /*
-  ** Headers of the page
-  ** Doc: https://vue-meta.nuxtjs.org/api/#metainfo-properties
-  */
+   ** Headers of the page
+   */
   head: {
-    title: 'Nuxt.js starter for CSB',
+    title: '20. Filmový festival Fakulty informatiky',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Official Nuxt.js starter for CodeSandBox' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
   /*
-  ** Global CSS
-  ** Doc: https://nuxtjs.org/api/configuration-css
-  */
+   ** Customize the progress-bar color
+   */
+  loading: { color: '#fff' },
+  /*
+   ** Global CSS
+   */
   css: [],
-
   /*
-  ** Plugins to load before mounting the App
-  ** Doc: https://nuxtjs.org/guide/plugins
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [],
-
   /*
-  ** Nuxt.js modules
-  ** Doc: https://nuxtjs.org/guide/modules
-  */
-  modules: [
-    // Doc: https://http.nuxtjs.org
-    '@nuxt/http',
-    // TODO: Remove it if you want to eject from codeSandbox
-    './codesandbox'
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    // '@nuxtjs/eslint-module'
   ],
-
   /*
-  ** HTTP module configuration
-  */
-  http: {
-    // See https://http.nuxtjs.org/api/#options
-  },
-
+   ** Nuxt.js modules
+   */
+  modules: [
+    [
+      'nuxt-fontawesome',
+      {
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ],
+    // Doc: https://bootstrap-vue.js.org
+    'bootstrap-vue/nuxt',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios'
+  ],
   /*
-  ** Build configuration
-  ** Doc: https://nuxtjs.org/api/configuration-build
-  */
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
+  /*
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {}
   }
-};
+}
