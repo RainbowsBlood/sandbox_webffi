@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Menu from '~/components/menu.vue'
+import Menu from '~/components/Menu.vue'
 import HomeButton from '~/components/HomeButton.vue'
 import ArchiveYears from '~/archiveYears.json'
 
