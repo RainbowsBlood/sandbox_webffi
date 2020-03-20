@@ -1,0 +1,39 @@
+{
+    "main_title": "Přihlášení filmu",
+    "intro_title": "Přihlašování filmů do 20. FFFIMU je spuštěno",
+    "intro": [
+        "Chceš točit filmy? Chceš se ukázat? Máš nápad a potřebuješ nakopnout? <br />",
+        "Tak tohle je tvoje jedinečná příležitost! <strong>Natoč</strong> krátký film, ",
+        "<strong>přihlaš</strong> ho na <br />20. Filmový festival Fakulty informatiky Masarykovy ",
+        "univerzity<br /> a <strong>vyhraj</strong>. Deadline? <strong>1</strong><strong>. dubna 2020 ",
+        "</strong>neotálej!<br /><br />S námi můžeš ukázat svoji tvorbu před stovkami lidí, uvidíš ",
+        "svůj film na velkém plátně a pokud tvůj snímek zaujme porotu nebo diváky, budeš oceněn ",
+        "hodnotnými peněžními i věcnými cenami.<br /><br />Už jsi náš?<strong><br />",
+        "<form action=\"https://forms.gle/LD9RVeiquCVPeJYG6\" target=\"_blank\"><input type=\"submit\" class=\"btn btn-outline-dark mt-4\" value=\"Přihlaš film!\" /></form><br />",
+        "</strong>Váhaš a&nbsp;potřebuješ více technických a&nbsp;organizačních detailů? ",
+        "Pročti si pravidla 👇🏻<br />(v případě potíží s&nbsp;přihlašováním prosím kontaktuj ",
+        "<a href=\"mailto:festival-tech@fi.muni.cz\">festival-tech@fi.muni.cz</a>, jsou to kámoši)"
+    ],
+    "rules_title": "Pravidla 20. FFFIMU",
+    "rules": [
+        "Filmový festival fakulty informatiky Masarykovy Univerzity je festival amatérskych krátkych filmů. ",
+        "Festivalový večer se uskuteční v&nbsp;pátek 22. května 2020 od 19 hodin a&nbsp;bude živě přenášen do ",
+        "multimediálních poslucháren FI MU.",
+        "<p class=\"my-4\"><strong>Podmínky pro přijetí filmu na 20. Filmový festival FI MU jsou:</strong></p>",
+        "<ol class=\"text-left\"><li>Do soutěže mohou být přijata amatérska audiovizuální díla libovolného žánru i&nbsp;formy zpracování (hraná, animovaná) v&nbsp;délce do 8&nbsp;minut</li><li>Tvůrci filmu nesmí být profesionálové v&nbsp;tvorbě audiovizuálnych děl</li><li>Snímek nesmí být starší než 3 roky</li><li>Snímek nesmí porušovat žádná autorská práva</li><li>Film může přihlásit pouze jeden z&nbsp;jeho autorů, a&nbsp;to se souhlasem všech spoluautorů díla</li></ol>",
+        "<p>Přihlášení je zdarma.</p>",
+        "<p class=\"my-4\"><strong>Soutěžní snímky budou hodnoceny třema způsoby:</strong></p>",
+        "<p class=\"text-left\"><u>Hlasováním odborné poroty</u></p>",
+        "<ol class=\"text-left\"><li><p>místo – 15 000 Kč</p></li><li><p>místo – 10 000 Kč</p></li><li><p>místo – 5&nbsp;000 Kč</p></li><li><p>místo – 2&nbsp;000 Kč</p></li><li><p>místo – 1&nbsp;000 Kč</p></li></ol>",
+        "<p class=\"text-left\"><u>Diváckou anketou</u> -&nbsp;prvních pět filmů získá hodnotné věcné ceny a&nbsp;odměny od sponzorů</p>",
+        "<p class=\"text-left\"><u>Cena Generálního sponzora</u> -&nbsp;jeden film podle výběru našeho generálního sponzor získa speciální cenu</p>",
+        "<p>Snímky je nutno přihlásit do 1. dubna 2020 pomocí online formuláře přes odkaz výše. Každý příspěvek musí mít výstižný název. Součástí přihlášky musí být též doprovodný text se stručnou anotací snímku. Pořadatelé festivalu si vyhrazují právo bez předání k posouzení Programovému výboru vyloučit příspěvky, které nesplňují výše uvedené podmínky, nebo příspěvky, které jsou obsahově v rozporu s českou legislativou. Každý autor/autorský kolektiv může přihlásit na festival maximálně tři samostatné snímky. Výběr snímků k projekci a dramaturgii večera určí ředitel festivalu s vyučujícími předmětu <a href=\"https://is.muni.cz/predmet/fi/jaro2020/PV113\">PV113 Produkce filmového díla</a>. Tato interní porota není shodná s&nbsp;odbornou porotou, která finálně určí vítězné pozice. Na zařazení do programu festivalu není právní nárok.</p>",
+        "<p>Autoři budou o přijetí či nepřijetí díla k projekci na festivalu informováni pomocí kontaktů uvedených v přihlášce. Snímky vybrané Programovým výborem budou během 20. Filmového festivalu Fakulty informatiky Masarykovy univerzity veřejně promítnuty v rámci programu festivalového večera. Vstup na projekce je zdarma.</p>",
+        "<p>Na výhru v soutěži nemá soutěžící právní nárok a nepeněžní ceny nelze ani alternativně plnit či proměnit v penězích. Ceny se předávají během slavnostního vyhlášení výsledků dne 22. května 2020. Při nepřítomnosti oceněného autora na slavnostním vyhlášení výsledků pak ceny budou vydány na základě oboustranné dohody autora s pořadateli 20. Filmového festivalu Fakulty informatiky MU.</p>",
+        "<p>Přihlášením filmu přihlašující poskytuje pořadateli bezplatnou licenci k&nbsp;promítnutí díla v&nbsp;rámci Filmového festivalu Fakulty informatiky MU.</p>",
+        "<p>Autor přihlášením snímku dále MU poskytuje licenci k&nbsp;případnému promítání díla v&nbsp;rámci výuky a&nbsp;k&nbsp;neveřejnému promítání pro akademickou obec MU a&nbsp;propagaci FFFI MU.</p>",
+        "<p class=\"my-4\"><strong>Technické specifikace pro filmy</strong></p>",
+        "<ul class=\"text-left mb-5\"><li><p>Maximální velikost nahrávaného videa jsou 2&nbsp;GB.</p></li><li><p>Doporučený formát (kodek) videa: H.264 (x264), (popř. MPEG-4 Part 2&nbsp;ASP (XviD), MPEG2)</p></li><li><p>Podporované kontejnery: AVI, MP4 (doporučené), M4V, MKV</p></li><li><p>Doporučený formát audia: WAV, FLAC, MP3 (bitrate u&nbsp;MP3 alespoň 192 kbps)</p></li><li><p>Doporučené rozlišení: FullHD nebo HD (tzn. 1920x1080 nebo 1280x720)</p></li><li><p>Doporučený bitrate: 5&nbsp;nbsp;-&nbsp;20 Mbps u&nbsp;x264 a&nbsp;XviD, 10 -&nbsp;20 Mbps u&nbsp;MPEG2</p></li><li>Doporučená hlasitost: max -3 dB</li></ul></p>"
+    ],
+    "buttonText": "Přihlaš film"
+}

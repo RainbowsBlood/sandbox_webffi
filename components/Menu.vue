@@ -1,27 +1,34 @@
 <template>
   <div>
-    <button class="menu-button" @click="toggleMenu()">
-      <div class="menu-burger" :class="{ open: !ishidden, light: islight }">
-        <span :class="{ light: islight }"></span>
-        <span :class="{ light: islight }"></span>
+    <button
+      class="menu-button"
+      :class="{ light: isLight, mobile: $device.isMobile }"
+      @click="toggleMenu()"
+    >
+      <div class="menu-burger" :class="{ open: !ishidden, light: isLight }">
+        <span :class="{ light: isLight }" />
+        <span :class="{ light: isLight }" />
       </div>
     </button>
     <transition name="fade">
       <div
         v-show="!ishidden"
         class="menu"
-        :class="{ light: islight, hidden: ishidden }"
+        :class="{ light: isLight, hidden: ishidden }"
       >
         <div class="menu-container">
           <ul style="padding-inline-start: 0">
             <li v-for="item in items" :key="item.id">
               <a
                 class="line"
-                :class="{ hidden: ishidden, light: islight }"
+                :class="{
+                  hidden: ishidden,
+                  light: isLight,
+                  mobile: $device.isMobile
+                }"
                 :href="item.href"
               >
-                {{ item.title }}</a
-              >
+                {{ item.title }}</a>
             </li>
           </ul>
         </div>
@@ -33,15 +40,20 @@
 <script>
 export default {
   name: 'Menu',
+  props: ['isLight'],
   data() {
     return {
-      islight: false,
       ishidden: true,
       items: [
         {
           title: 'Domů',
-          href: '/#',
+          href: '/',
           active: true
+        },
+        {
+          title: 'O Festivalu',
+          href: '/intro',
+          active: false
         },
         {
           title: 'Archiv',
@@ -50,8 +62,12 @@ export default {
         },
         {
           title: 'Přihlaš film',
-          href:
-            'https://docs.google.com/forms/u/2/d/e/1FAIpQLSe45Lk9wwninlk183Z3k2Nx_7tim7vwwWkL0B2RFRZGLRMZ_A/viewform?usp=send_form',
+          href: '/registration',
+          active: false
+        },
+        {
+          title: 'Partneři',
+          href: '/partners',
           active: false
         }
       ]
@@ -66,6 +82,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+html {
+  overflow: hidden;
+}
 .menu-button {
   width: 3rem;
   height: 3rem;
@@ -81,7 +100,9 @@ export default {
   z-index: 3;
   border-style: none;
 }
-
+.menu-button.mobile {
+  right: 1rem;
+}
 .menu-button:focus {
   outline: none;
 }
@@ -105,7 +126,7 @@ export default {
   position: absolute;
   height: 0.05rem;
   width: 100%;
-  background: #000 !important;
+  background: #000;
   opacity: 1;
   right: 0;
   -webkit-transform: rotate(0deg);
@@ -117,8 +138,9 @@ export default {
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-span.light {
-  backround: #fff;
+
+.menu-burger span.light {
+  background: #fff;
 }
 .menu-burger span:nth-child(1) {
   top: 8px;
@@ -143,19 +165,24 @@ span.light {
 }
 
 .menu {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #000 !important;
+  background: #000;
   background-image: none !important;
   box-sizing: border-box;
   z-index: 2;
 }
+.menu.light {
+  background: white;
+}
 
 .menu-container {
+  overflow: hidden;
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 5rem;
   left: 0;
   text-align: center;
 }
@@ -176,6 +203,11 @@ span.light {
 }
 .line.light {
   color: #000;
+}
+.line.mobile {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
 }
 li {
   list-style-type: none;

@@ -1,0 +1,11 @@
+@import url('@/assets/exo2.css');
+.lightPage {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.header__title {
+  padding-top: 5rem !important;
+  top: 10%;
+  font-weight: 600;
+  font-size: 3rem;
+}

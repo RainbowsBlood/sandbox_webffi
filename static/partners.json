@@ -1,0 +1,88 @@
+{
+    "title": "Partneři",
+    "empty": "Brzy bude doplněno",
+    "partners": [
+        {
+            "description": "general",
+            "title": "Generální sponzor",
+            "sponsors": [
+                {
+                    "company_name": "Abra",
+                    "company_link": "https://www.abra.eu",
+                    "company_logo": "abra.png"
+                }
+            ]
+        },
+        {
+            "description": "support",
+            "title": "Za finanční podpory",
+            "sponsors": [
+                {
+                    "company_name": "SolarWinds CZ",
+                    "company_link": "https://www.solarwinds.com",
+                    "company_logo": "solarwinds.png"
+                },
+                {
+                    "company_name": "Brno",
+                    "company_link": "https://www.brno.cz",
+                    "company_logo": "brno.png"
+                },
+                {
+                    "company_name": "24\/i",
+                    "company_link": "https://www.24i.com",
+                    "company_logo": "24i.png"
+                },
+                {
+                    "company_name": "Kentico",
+                    "company_link": "https://www.kentico.com",
+                    "company_logo": "kentico.png"
+                },
+                {
+                    "company_name": "Masarykova Univerzita",
+                    "company_link": "http://www.muni.cz",
+                    "company_logo": "muni.png"
+                }
+            ]
+        },
+        {
+            "description": "prices",
+            "title": "Darovali věcné ceny",
+            "sponsors": [
+                {
+                    "company_name": "Red Hat",
+                    "company_link": "https://www.redhat.com",
+                    "company_logo": "redhat.png"
+                },
+                {
+                    "company_name": "Sport Balkán",
+                    "company_link": "https://www.sportbalkan.cz",
+                    "company_logo": "sportbalkan.png"
+                }
+            ]
+        },
+        {
+            "description": "main_media",
+            "title": "Hlavní mediální partneři"
+        },
+        {
+            "description": "media",
+            "title": "Mediální partneři"
+        },
+        {
+            "description": "organization",
+            "title": "Organizátoři festivalu",
+            "sponsors": [
+                {
+                    "company_name": "LEMMA FI MU",
+                    "company_link": "http://lemma.fi.muni.cz",
+                    "company_logo": "lemma.png"
+                },
+                {
+                    "company_name": "Fakulta informatiky MU",
+                    "company_link": "http://www.fi.muni.cz",
+                    "company_logo": "muni_fi.png"
+                }
+            ]
+        }
+    ]
+}

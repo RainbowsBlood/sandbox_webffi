@@ -1,24 +1,17 @@
 <template>
-  <div class="archive">
-    <div class="bg-lines hidden text-center">
-      <svg>
-        <line x1="20%" y1="100%" x2="80%" y2="0" />
-        <line x1="80%" y1="100%" x2="20%" y2="0" />
-      </svg>
-    </div>
-
+  <div class="archive lightPage">
     <div class="archive__header">
-      <Menu v-on:menuToggled="isVisible = !isVisible" />
-      <HomeButton />
+      <Menu :is-light="isLight" @menuToggled="isVisible = !isVisible" />
+      <HomeButton :is-light="isLight" />
       <div class="header__title text-center mx-3 pt-4 mb-5">
-        Archiv
+        {{ archive.title }}
       </div>
     </div>
 
     <div v-show="isVisible" class="archive__years w-75 m-auto">
       <div class="row row-cols-3 d-flex px-auto">
         <div
-          v-for="year in years.years"
+          v-for="year in archive.years"
           :key="year.year"
           class="col-md-3 mb-5 text-center"
         >
@@ -28,62 +21,33 @@
         </div>
       </div>
     </div>
+    <Footer :is-light="isLight" />
   </div>
 </template>
 
 <script>
-import Menu from '~/components/Menu.vue'
-import HomeButton from '~/components/HomeButton.vue'
-import ArchiveYears from '~/archiveYears.json'
+import Menu from '@/components/Menu.vue'
+import HomeButton from '@/components/HomeButton.vue'
+import Footer from '~/components/Footer.vue'
+import Archive from '@/static/archive.json'
 
 export default {
   name: 'Archive',
   components: {
     Menu,
-    HomeButton
+    HomeButton,
+    Footer
   },
-  data() {
-    return {
-      isVisible: true,
-      years: ArchiveYears
-    }
-  }
+  data: () => ({
+    isVisible: true,
+    isLight: true,
+    archive: Archive
+  })
 }
 </script>
 
 <style lang="css" scoped>
-.bg-lines {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  opacity: 0.08;
-  top: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.bg-lines svg {
-  width: 100%;
-  height: 100%;
-}
-
-.bg-lines svg line {
-  stroke-width: 1;
-  stroke: rgb(0, 0, 0);
-}
-
-.light-content .bg-lines svg line {
-  stroke: rgba(255, 255, 255, 0.137);
-}
-
-.archive {
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.header__title {
-  font-weight: 600;
-  font-size: 3rem;
-}
+@import '@/assets/lightPage.css';
 
 .archive__years a {
   text-decoration: none;

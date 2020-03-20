@@ -47,7 +47,7 @@ export default {
         if (this.i < this.range) {
           if (this.i < 50) {
             this.frandom = 'F' + this.rndStr(3) + ' M' + this.rndStr(1)
-          } else if (this.i < 53) {
+          } else if (this.i < 52) {
             this.frandom = 'FUCK ME'
           } else if (this.i < 70) {
             this.frandom = 'F*' + this.rndStr(2) + ' M' + this.rndStr(1)
@@ -69,18 +69,22 @@ export default {
 }
 </script>
 <style lang="css" scoped>
-@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url('@/assets/vt323.css');
+@import url('@/assets/exo2.css');
+html {
+  overflow: hidden;
+}
 .hero {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 100;
   background-color: #000;
 }
 
 .hero-center {
+  position: relative;
   width: 100%;
-  position: absolute;
   top: 35%;
   z-index: 100;
   left: 0;
@@ -96,6 +100,7 @@ h1 {
 footer {
   text-align: center;
   color: #fff;
+  font-family: 'Exo 2', sans-serif;
   font-size: 1rem;
   position: relative;
   bottom: 0px;

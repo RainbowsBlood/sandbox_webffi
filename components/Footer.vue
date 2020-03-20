@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <footer>
-      <div class="socials">
+      <div class="socials" :class="{ light: isLight }">
         <a href="https://www.facebook.com/festival.fi.muni.cz">
           <font-awesome-icon :icon="['fab', 'facebook-square']" size="lg"
         /></a>
@@ -24,19 +24,16 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  props: ['isLight']
 }
 </script>
 
 <style lang="css" scoped>
+@import url('@/assets/exo2.css');
 .footer-container {
-  position: absolute;
-  padding: 70px 20px 50px 20px;
-  width: 100%;
-  height: 200px;
-  z-index: 1;
-  bottom: 0;
-  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  padding: 20px;
   text-align: center;
 }
 .copyright {
@@ -54,5 +51,8 @@ export default {
 .socials > a {
   color: white;
   margin: 0.5rem;
+}
+.socials.light > a {
+  color: black;
 }
 </style>
